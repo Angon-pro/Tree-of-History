@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Tree of History</string>
+    <string name="hello">Hello!</string>
+    <string name="please_enter_your_details">Please enter your details</string>
+    <string name="name">Name</string>
+    <string name="your_name_hint">Your name</string>
+    <string name="surname">Surname</string>
+    <string name="your_surname_hint">Your surname</string>
+    <string name="age">Age</string>
+    <string name="your_age_hint">Your age</string>
+    <string name="information">Information</string>
+    <string name="your_information_hint">Some information about you</string>
+    <string name="adding_person">Adding a new person</string>
+    <string name="person_name_hint">Person\'s name</string>
+    <string name="person_surname_hint">Person\'s surname</string>
+    <string name="person_age_hint">Person\'s age</string>
+    <string name="information_hint">Some additional information</string>
+    <string name="add_photo_suggestion">Would you like to add a photo?</string>
+    <string name="skip">Skip</string>
+    <string name="add_photo">Add photo</string>
+    <string name="desirable_ratio_hint">Desirable ratio of a photo is 3:4</string>
+    <string name="change_photo">Change photo</string>
+    <string name="continue_button">Continue</string>
+    <string name="make_your_own">Make your own</string>
+    <string name="history">history</string>
+    <string name="tree">tree</string>
+    <string name="your_tree">The tree of your history</string>
+    <string name="delete_person">Delete person</string>
+    <string name="edit_person">Edit person</string>
+    <string name="no_information">No extra information about the person</string>
+    <string name="person_card">Person\'s card</string>
+    <string name="save_changes">Save changes</string>
+    <string name="delete_photo">Delete photo</string>
+</resources>

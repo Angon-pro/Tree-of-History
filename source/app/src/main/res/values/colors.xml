@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#2962FF</color>
+    <color name="windowBackground">#424242</color>
+    <color name="tableRowBackground">#383838</color>
+    <color name="appTextColor">#00E676</color>
+    <color name="enterTextColor">#FFFFFF</color>
+    <color name="hintTextColor">#9E9E9E</color>
+    <color name="pressedButtonColor">#2300D0</color>
+    <color name="deleteButtonColor">#F20000</color>
+    <color name="deleteButtonColorHighlight">#A10000</color>
+</resources>

@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.angon.tree_of_history.TreeActivity">
+
+
+    <TextView
+        android:id="@+id/yourTree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/your_tree"
+        android:textColor="@color/appTextColor"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourTree">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/generationsTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:background="@color/tableRowBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/generation1" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/generation2" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/generation3" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/generation4" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/generation5" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/generation6" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/generation7" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/mainPersonLayout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/mainPerson"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:id="@+id/mainPersonName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/second2Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/second2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/second2Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/second3Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/second3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/second3Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/second4Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/second4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/second4Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/second5Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/second5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/second5Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/second6Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/second6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/second6Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/second7Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/second7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/second7Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/thirdRow"
+                    android:background="@color/tableRowBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/third1Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/third1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/third1Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/third2Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/third2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/third2Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/third3Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/third3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/third3Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/third4Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/third4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/third4Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/third5Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/third5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/third5Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/third6Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/third6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/third6Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/third7Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/third7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/third7Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/fourthRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/fourth1Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fourth1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fourth1Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="150dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fourth3Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fourth3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fourth3Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fourth4Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fourth4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fourth4Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fourth5Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fourth5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fourth5Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fourth6Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fourth6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fourth6Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fourth7Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fourth7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fourth7Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/fifthRow"
+                    android:background="@color/tableRowBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/fifth1Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fifth1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fifth1Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="150dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fifth3Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fifth3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fifth3Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fifth4Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fifth4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fifth4Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fifth5Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fifth5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fifth5Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fifth6Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fifth6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fifth6Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fifth7Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/fifth7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/fifth7Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/sixthRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/sixth1Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/sixth1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/sixth1Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="150dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="150dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sixth4Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/sixth4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/sixth4Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sixth5Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/sixth5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/sixth5Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sixth6Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/sixth6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/sixth6Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sixth7Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/sixth7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/sixth7Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/seventhRow"
+                    android:background="@color/tableRowBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="150dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="150dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="150dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/seventh4Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/seventh4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/seventh4Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/seventh5Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/seventh5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/seventh5Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/seventh6Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/seventh6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/seventh6Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/seventh7Layout"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/seventh7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/seventh7Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/enterTextColor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
